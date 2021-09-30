@@ -12,6 +12,9 @@ module.exports = {
         orange: colors.orange,
         indigo: colors.indigo,
         cyan: colors.cyan,
+      },
+      rotate: {
+        '135': '135deg',
       }
     },
   },

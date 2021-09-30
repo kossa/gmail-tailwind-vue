@@ -3,6 +3,8 @@
     <div class="relative overflow-hidden h-full px-4 py-2 bg-gray-900 rounded-3xl">
       <Header />
 
+      <LeftMenu :is_left_menu_open="is_left_menu_open"/>
+
       <Search />
 
       <div class="my-5">
@@ -65,6 +67,7 @@
 
 <script>
 import Header from './components/Header.vue'
+import LeftMenu from './components/LeftMenu.vue'
 import Search from './components/Search.vue'
 import Email from './components/Email.vue'
 import Footer from './components/Footer.vue'
@@ -73,10 +76,17 @@ import Compose from './components/Compose.vue'
 export default {
   components: {
     Header,
+    LeftMenu,
     Search,
     Email,
     Footer,
     Compose,
+  },
+
+  data() {
+    return {
+      is_left_menu_open: false,
+    }
   }
 }
 

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="absolute inset-x-0 top-0">
-      <div class="relative h-8 mx-auto bg-white w-44 rounded-b-3xl">
+    <div class="absolute inset-x-0 top-0 z-30">
+      <div class="relative h-8 mx-auto bg-white w-44 rounded-b-3xl z-30">
         <div class="h-1 mx-auto translate-y-3 bg-gray-300 rounded-full w-14"></div>
-        <div class="absolute w-2 h-2 mt-1 bg-red-600 rounded-full right-9 "></div>
+        <div class="absolute w-2 h-2 mt-1 bg-gray-400 rounded-full right-9 "></div>
       </div>
     </div> <!-- camera and sound -->
-    <div class="flex justify-between">
+    <div class="flex justify-between relative z-30">
       <div class="text-white">9:40</div>
       <div class="flex space-x-2 text-white">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 text-white" viewBox="0 0 20 20" fill="currentColor">
