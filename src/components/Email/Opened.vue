@@ -42,7 +42,7 @@
       <div class="">
         <img class="rounded-full w-9" :src="email.src" alt="">
       </div> <!-- image -->
-      <div class="col-span-4 space-y-1 leading-none" :class="{'text-gray-500': email.is_read , 'text-gray-200': ! email.is_read }">
+      <div class="col-span-4 space-y-1 leading-none text-gray-200">
         <div>
           {{ email.name }}
           <span class="text-xxs text-gray-400 ml-2">{{ time }}</span>
@@ -75,6 +75,9 @@
       <div>
         <p>Hello,</p>
         <p class="mt-3" v-html="email.content"></p>
+
+        <p class="mt-4">Best,</p>
+        <p>{{ email.name }}</p>
       </div>
 
       <div class="flex space-x-2 pt-4 pb-2 px-1">

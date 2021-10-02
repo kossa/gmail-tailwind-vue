@@ -32,6 +32,10 @@ export default {
 
   methods: {
     openEmail() {
+      // Mark email as read
+      this.$root.emails[this.index].is_read = true
+
+      // Open the email
       this.$parent.$parent.openned_email = this.index
     },
   },
