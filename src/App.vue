@@ -8,7 +8,7 @@
       <Search />
 
       <div class="my-5">
-        <div class="font-medium text-gray-600 uppercase">Primary</div>
+        <div class="font-medium text-gray-400">Inbox</div>
 
         <div class="space-y-3 mt-3">
           <div class="grid items-center w-full grid-cols-6">
@@ -53,13 +53,13 @@
         </div> <!-- End social/promotios/updates -->
 
         <div class="space-y-5 mt-6">
-          <Email v-for="x in 6" :key="x" :index="x" />
+          <Email v-for="x in 6" :key="x-1" :index="x-1" />
         </div> <!-- emails wrapper -->
       </div> <!-- emails list -->
 
-      <Footer />
+      <Footer v-if="openned_email === null" />
 
-      <Compose />
+      <Compose v-if="openned_email === null" />
 
     </div> <!-- phone wrapper -->
   </div> <!-- phone frame -->
@@ -85,9 +85,10 @@ export default {
 
   data() {
     return {
+      openned_email: null,
       is_left_menu_open: false,
     }
-  }
+  },
 }
 
 </script>

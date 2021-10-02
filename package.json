@@ -9,6 +9,7 @@
   "dependencies": {
     "@tailwindcss/line-clamp": "^0.2.1",
     "faker": "^5.5.3",
+    "moment": "^2.29.1",
     "vue": "^3.2.16"
   },
   "devDependencies": {

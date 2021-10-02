@@ -6,6 +6,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      scale: {
+        'flip': '-1',
+      },
+      fontSize: {
+        'xxs': '.625rem',
+      },
       colors: {
         lime  : colors.lime,
         sky   : colors.sky,
