@@ -39,7 +39,6 @@ export default {
 
   watch: {
     is_dark(val) {
-      console.log(val)
       if (val) {
         document.documentElement.classList.add('dark')
         localStorage.theme = 'dark'
