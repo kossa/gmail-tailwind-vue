@@ -30,8 +30,10 @@ export default {
   mounted() {
     if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
       document.documentElement.classList.add('dark')
+      this.is_dark = true
     } else {
       document.documentElement.classList.remove('dark')
+      this.is_dark = false
     }
   },
 
