@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="flex items-center px-4 py-2 mt-4 bg-gray-700 rounded">
+    <div class="flex items-center px-4 py-2 mt-4 bg-gray-200 rounded-full dark:bg-gray-700">
         <a href="#" @click.prevent="toggleMenu()">
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-5 text-gray-800 dark:text-gray-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
         </a>
-        <input type="text" placeholder="Search mail" class="w-full pl-2 font-light text-white placeholder-gray-400 bg-transparent focus:outline-none">
+        <input type="text" placeholder="Search mail" class="w-full pl-2 font-light text-gray-900 placeholder-gray-400 bg-transparent dark:text-white focus:outline-none">
         <div class="overflow-hidden rounded-full w-7">
           <img class="" :src="avatar" alt="">
         </div>

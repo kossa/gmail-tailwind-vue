@@ -1,8 +1,8 @@
 <template>
-  <div class="p-4 bg-gray-900 inset-0 absolute text-white top-6 flex flex-col">
+  <div class="absolute inset-0 flex flex-col p-4 text-gray-900 bg-gray-100 dark:bg-gray-900 dark:text-white top-6">
     <div class="flex justify-between mb-4">
       <a href="#" @click.prevent="back()">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 17l-5-5m0 0l5-5m-5 5h12" />
         </svg><!-- icon back -->
       </a>
@@ -24,10 +24,10 @@
         </a>
       </div>
     </div> <!-- email header -->
-    <div class="flex text-lg items-center">
+    <div class="flex items-center text-lg">
       <div>
         {{ email.subject }}
-        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 rotate-135 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 rotate-135" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
         </svg> <!-- tags -->
         <a href="#" class="text-xxs border px-2 py-0.5 rounded-md border-gray-500 ml-2">Add label</a>
@@ -38,14 +38,14 @@
 
     </div>
 
-    <div class="grid w-full grid-cols-6 mt-6">
+    <div class="w-full mt-6 grid grid-cols-6">
       <div class="">
         <img class="rounded-full w-9" :src="email.src" alt="">
       </div> <!-- image -->
-      <div class="col-span-4 space-y-1 leading-none text-gray-200">
+      <div class="leading-none text-gray-800 col-span-4 space-y-1 dark:text-gray-200">
         <div>
           {{ email.name }}
-          <span class="text-xxs text-gray-400 ml-2">{{ time }}</span>
+          <span class="ml-2 text-gray-500 text-xxs dark:text-gray-400">{{ time }}</span>
         </div>
         <div class="flex text-gray-500">
           <div>
@@ -71,7 +71,7 @@
       <!-- label -->
     </div><!-- email in list -->
 
-    <div class="flex flex-col flex-1 justify-between mt-8 overflow-auto">
+    <div class="flex flex-col justify-between flex-1 mt-8 overflow-auto">
       <div>
         <p>Hello,</p>
         <p class="mt-3" v-html="email.content"></p>
@@ -80,14 +80,14 @@
         <p>{{ email.name }}</p>
       </div>
 
-      <div class="flex space-x-2 pt-4 pb-2 px-1">
-        <a href="#" class="flex flex-1 items-center justify-center p-2 rounded-full border border-gray-500 transition-all ring-gray-50 focus:ring-2	">
+      <div class="flex px-1 pt-4 pb-2 space-x-2">
+        <a href="#" class="flex items-center justify-center flex-1 p-2 border border-gray-300 rounded-full dark:border-gray-500 transition-all ring-gray-50 focus:ring-2	">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
           </svg>
           Reply
         </a>
-        <a href="#" class="flex flex-1 items-center justify-center p-2 rounded-full border border-gray-500 transition-all ring-gray-50 focus:ring-2	">
+        <a href="#" class="flex items-center justify-center flex-1 p-2 border border-gray-300 rounded-full dark:border-gray-500 transition-all ring-gray-50 focus:ring-2	">
           <svg xmlns="http://www.w3.org/2000/svg" class="w-5 mr-2 scale-x-flip" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
           </svg>

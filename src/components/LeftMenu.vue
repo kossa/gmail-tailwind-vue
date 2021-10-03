@@ -1,18 +1,18 @@
 <template>
   <div>
     <div
-      class="absolute inset-0 bg-gray-600/75 z-10 text-white font-normal text-sm top-8"
+      class="absolute inset-0 z-10 text-sm font-normal text-gray-900 bg-gray-600/75 dark:text-white top-8"
       v-show="is_left_menu_open"
       @click.self="closeMenu()"
       ></div><!-- overly -->
 
       <div
-        class="bg-gray-900 min-h-full w-4/5 divide-y divide-gray-500 max-h-full overflow-y-auto transition-all duration-200 absolute -left-full bottom-0 z-30 text-white top-8 pb-8"
+        class="absolute bottom-0 z-30 w-4/5 max-h-full min-h-full pb-8 overflow-y-auto text-gray-900 bg-gray-100 dark:bg-gray-900 divide-y dark:divide-gray-500 divide-gray-200 transition-all duration-200 -left-full dark:text-white top-8"
         :class="{'left-0': is_left_menu_open}"
         >
 
         <div>
-          <div class="px-3 py-4 font-bold text-base">Gmail</div>
+          <div class="px-3 py-4 text-base font-bold">Gmail</div>
         </div> <!-- block -->
 
         <div>
@@ -23,7 +23,7 @@
               </div>
               <div>Active</div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
             </svg>
           </div>
@@ -51,7 +51,7 @@
               </div>
           </MenuItem>
 
-          <div class="uppercase tracking-wider p-3">All labels</div>
+          <div class="p-3 tracking-wider uppercase">All labels</div>
           <MenuItem>
             <div class="flex items-center">
               <div class="w-6">
@@ -142,7 +142,7 @@
               <div>Bin</div>
             </div>
           </MenuItem>
-          <div class="uppercase tracking-wider p-3">Google apps</div>
+          <div class="p-3 tracking-wider uppercase">Google apps</div>
           <MenuItem>
             <div class="flex items-center">
               <div class="w-6">
