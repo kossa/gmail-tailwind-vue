@@ -25,12 +25,14 @@
       </div>
     </div> <!-- email header -->
     <div class="flex items-center text-lg">
-      <div>
+      <div class="flex flex-wrap items-center">
         {{ email.subject }}
-        <svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 rotate-135" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
-        </svg> <!-- tags -->
-        <a href="#" class="text-xxs border px-2 py-0.5 rounded-md border-gray-500 ml-2">Add label</a>
+        <div class="mr-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="inline w-4 rotate-135 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+          </svg> <!-- tags -->
+        </div>
+        <a href="#" class="text-xxs border px-2 rounded-md border-gray-500 leading-4">Add label</a>
       </div>
       <div>
         <FavoriteStar :is_favorite="email.is_favorite" />

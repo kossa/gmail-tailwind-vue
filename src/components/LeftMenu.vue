@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="absolute inset-0 z-10 text-sm font-normal text-gray-900 bg-gray-600/75 dark:text-white top-8"
+      class="absolute inset-0 z-10 text-sm font-normal text-gray-900 bg-gray-600/75 top-8"
       v-show="is_left_menu_open"
       @click.self="closeMenu()"
       ></div><!-- overly -->
