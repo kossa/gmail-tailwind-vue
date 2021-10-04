@@ -1,5 +1,8 @@
 # Gmail mobile app clone with Tailwindcss and Vite(Vuejs)
 
+![Kiku](presentation.jpg)
+
+
 ## Set up
 
 ```
